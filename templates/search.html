@@ -54,12 +54,11 @@
                     </div>
                 </div>
                 <div class="row row-cards">
-                    {% for _ in  images %}
+                    {% for img in  images %}
                         <div class="col-sm-6 col-lg-4">
                             <div class="card p-3">
-                                <a href="https://via.placeholder.com/350x150" class="mb-3">
-                                    <img src="https://via.placeholder.com/350x150" alt="Photo by Nathan Guerrero"
-                                         class="rounded">
+                                <a href="{{ img }}" class="mb-3">
+                                    <img src="{{ img }}" class="rounded">
                                 </a>
                                 <div class="d-flex align-items-center px-2">
                                     <div class="ml-auto text-muted">
